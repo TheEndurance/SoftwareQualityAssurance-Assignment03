@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment3
+namespace ProjectA
 {
     class Program
     {
@@ -33,7 +33,7 @@ namespace Assignment3
             string userInput = string.Empty;
             double? time = null;
 
-            while (time == null)
+            while (time==null)
             {
                 Console.WriteLine($"Enter the value of the time");
                 userInput = Console.ReadLine();
@@ -86,7 +86,7 @@ namespace Assignment3
                         {
                             Console.WriteLine($"An error occured: {ex.Message}");
                         }
-  
+
                         break;
                     case 2:
                         Console.WriteLine("Thank you, exiting now...");

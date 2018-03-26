@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment3
+namespace ProjectC
 {
     class Program
     {
@@ -86,7 +86,7 @@ namespace Assignment3
                         {
                             Console.WriteLine($"An error occured: {ex.Message}");
                         }
-  
+
                         break;
                     case 2:
                         Console.WriteLine("Thank you, exiting now...");
