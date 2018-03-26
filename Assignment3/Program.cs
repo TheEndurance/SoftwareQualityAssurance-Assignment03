@@ -77,8 +77,16 @@ namespace Assignment3
                     case 1:
                         double time = GetDateTime();
                         string[] dateTimeStrings = GetConvertStrings();
-                        double result = TimeConversion.Convert(time, dateTimeStrings[0], dateTimeStrings[1]);
-                        Console.WriteLine($"The time of {time} {dateTimeStrings[0]} converted to {dateTimeStrings[1]} is {result} {dateTimeStrings[1]}");
+                        try
+                        {
+                            double result = TimeConversion.Convert(time, dateTimeStrings[0], dateTimeStrings[1]);
+                            Console.WriteLine($"The time of {time} {dateTimeStrings[0]} converted to {dateTimeStrings[1]} is {result} {dateTimeStrings[1]}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"An error occured: {ex.Message}");
+                        }
+  
                         break;
                     case 2:
                         Console.WriteLine("Thank you, exiting now...");

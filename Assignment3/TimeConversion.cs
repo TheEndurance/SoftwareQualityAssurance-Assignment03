@@ -51,6 +51,10 @@ namespace Assignment3
                     output = "days";
                 }
             }
+            if (output.Equals(string.Empty))
+            {
+                throw new ArgumentException("Incorrect time unit");
+            }
             return output;
         }
 
